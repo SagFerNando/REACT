@@ -1,0 +1,89 @@
+.login {
+    height: calc(100vh - 50px);
+    margin: 100px;
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      );
+      background-size: cover;
+  }
+  .tarjetas {
+    width: 100%;
+    
+    font-size: 20px;
+    background: #fff;
+    align-items: center;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+  
+  .loginTitle {
+    font-size: 50px;
+  }
+  
+  .loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginForm > label {
+    margin: 10px 0;
+  }
+
+  
+  .loginInput {
+    padding: 10px;
+    color: gray;
+    width: 500px;
+    background-color: white;
+    border: none;
+    height: 30px;
+    border-radius: 10px;    
+    border-bottom: 1px solid lightgray;
+
+  }
+
+  
+  .loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .loginButton:hover{
+
+    background-color: rgb(7, 159, 159);
+  }
+  
+  .loginRegisterButton {
+    
+    top: 60px;
+    right: 20px;
+    margin-top: 10px;
+    background-color: lightcoral;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+  }
+  .loginRegisterButton:hover {
+    background-color: rgb(242, 172, 172);
+  }
