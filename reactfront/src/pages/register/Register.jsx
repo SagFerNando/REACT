@@ -27,7 +27,7 @@ const Register = () => {
                 alert('Error al crear la cuenta');
             }
         } catch (error) {
-            setError(error);
+            setError(error.response.data.message); // Mostrar el mensaje de error del servidor
         }
     };
 
@@ -39,7 +39,7 @@ const Register = () => {
                         <span className="settingsTitleUpdate">Crea una cuenta</span>
                         <span className="settingsTitleDelete">Eliminar cuenta</span>
                     </div>
-                    {/* {error && <div className="error">{error}</div>} */}
+                    {error && <div className="error">{error}</div>}
                     <form className="settingsForm" onSubmit={handleRegister}>
                         <label>Nombre</label>
                         <input

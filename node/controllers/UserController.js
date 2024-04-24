@@ -27,7 +27,7 @@ export const getUser = async (req, res) => {
 
 // Método para crear un nuevo usuario
 export const createUser = async (req, res) => {
-    const { email } = req.body;
+    const { name, email, password } = req.body;
 
     try {
         // Verificar si el correo electrónico ya está registrado
@@ -37,7 +37,7 @@ export const createUser = async (req, res) => {
         }
 
         // Crear el nuevo usuario solo si el correo electrónico no existe en la base de datos
-        await UserModel.create(req.body);
+        await UserModel.create({ name, email, password });
         res.status(201).json({ message: "Usuario creado correctamente" });
     } catch (error) {
         res.status(500).json({ message: "Error al crear el usuario" });
