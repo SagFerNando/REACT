@@ -55,6 +55,7 @@ export default function Posts() {
     };
 
     return (
+        
         <div className='card'>
             {showQuiz ? ( // Renderizado condicional para mostrar solo Quiz cuando showQuiz es true
         <Quiz />
